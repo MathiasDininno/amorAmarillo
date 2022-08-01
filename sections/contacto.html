@@ -5,60 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <script src="https://kit.fontawesome.com/d9a6ebac5b.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 <body>
        
-        <div class="contenedor">
-                <header class="header"><img class="logo" src="../img/logotipo.png" alt=""></header>
-                        <nav>
-                            <ul>
-                                <li><a href="../index.html">Inicio</a></li>
-                                <li><a href="./galeria.html">Galeria</a></li>
-                                <li><a href="./contacto.html">Contacto</a></li>
-                                <li><a href="./consejos.html">Consejos</a></li>
-                                <li><a href="./historia.html">Historia</a></li>
-                            </ul>
-                        </nav>
-                </header>
+    <div class="contenedor">
+            <header class="header">
+              <a href="../index.html"><img class="logo" src="../img/logotipo.png" alt=""></a>
 
-                <section>
-                        <h1 class="titulo">Amor Amarillo</h1>
-                        <h2>Objetos de uso diario y decoración</h2>
-                        <h2 class="seccion">Consejos</h2>
-                </section>
-        </div>            
-        <section>
-            <article>
-                <form>
-                                <input type="text" placeholder="Nombre y Apellido"><br>
-				<label for="email">Email:
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-				</label>
-				<label for="Observaciones"> Dejanos tus mensaje:<br>
-					<textarea placeholder="Text"></textarea>
-				</label> <br>
-				<input type="number" placeholder="Decime tu edad"><br>
-				<div><p>¿Sos mayor de 18?</p>
-					<div>Si
-						<input type="radio" name="lado" value="Si">
-					</div>
-					<div>No
-						<input type="radio" name="lado" value="No">
-					</div>
-				</div>
-				<div>¿Aceptas los terminos?
-				<input type="checkbox" name="acepta" value="1"></div>
-				
-				
-                </form>
-            </article>
-        </section>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </header>
+    </div>
 
+    <nav>  
+        <ul class="casillas">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./consejos.html">Consejos</a></li>
+                <li><a href="./historia.html">Historia</a></li>
+        </ul>
+    </nav> 
+
+
+
+    <section class="titulo1">
+        <h1 class="titulo amoramarillo">Amor Amarillo</h1>
+        <h2 class="titulo diario">Aquí te podras poner en contacto</h2>
+
+
+        <div class="contact_form">
+
+            <div class="formulario">      
+              <h1>Formulario de contacto</h1>
+                <h3 class="h3">Escríbenos y en breve los pondremos en contacto contigo</h3>
         
         
-        <footer>
-                <h3 class="año">2022</h3>
-        </footer>
+                  <form action="submeter-formulario.php" method="post">       
+        
+                    
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                      
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                      
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                        </p>                    
+                      
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                    
+                  </form>
+            </div>  
+          </div>
+        
+</section> 
+
+<div class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.02542107703!2d-57.98818988612148!3d-34.
+    92052327674958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20
+    Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1659131149408!5m2!1ses-419!2sar" 
+    width="400" height="300" style="border:0;" allowfullscreen=""
+     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<footer>
+    <h3 class="final">2022</h3>
+    <a class="correo" href="#">
+        <i class="fa-solid fa-envelope"></i></a>
+    <a class="correo" href="#">amoramarillo@gmail.com</a>
+</footer>
 </body>
 </html>

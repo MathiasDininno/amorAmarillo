@@ -5,87 +5,264 @@
 }
 
 body{
-    text-align: center;
-    background-color: black;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    text-align: center;
+    min-width: 102vh;
+    min-height: 80vh;
+    background-color: rgb(0, 0, 0);
 }
 
-.contenedor{
-    background-color: rgb(244, 228, 0);
+.contenedor{ /*Declare la parte superior del sitio*/
     display: grid;
     width: 100%;
-    height: 30vh;
-    justify-items: center;
-    
+    height: 18vh;
+    background-color: rgb(244, 228, 0);
 }
 
 header .logo{
-   display: grid;
-   padding: 2%;
-   width: 5em;
-   height: 5em;
+    display: flex;
+    float: left; /*Para que se mantenga del lado izquierdo*/
+    padding: 1%; /*Paddding para que tengo distacia con los bordes*/
+    width: 75px; 
+    height: 75px;
+}
+
+.social a{ /*Redes sociales superior*/
+    display: flex;
+    float: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    padding: 30px 4%;
+}
+
+.social a:hover{ /*Declaro que color y escala quiero para mis redes*/
+    color: rgb(243, 243, 243);
+    transform: scale(1.3); /*Escala el tamaño de las redes*/
 }
 
 nav{
-    display: grid;
-    background-color: black;
-    text-transform:uppercase;
+    display: flex;
+    flex-direction: row; /*Dejo en claro que quiero el texto a lo largo*/
+    font-size: 120%; /*Declaro tamaño de letra*/
+    border-bottom: 2px solid yellow;
+    justify-content: space-around; /*Hago que el manu se centre*/
+    background-color: rgb(0, 0, 0);
 }
 
-.casillas{
+.casillas{ 
     display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid rgb(244, 228, 0);
+    flex-direction: row;
+    padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
 }
 
 .casillas li{
-    display: grid;
-    padding: 0 1em;
-    margin-left: 3%;
+    display: flex;
+    padding: 0 20px;/*Declaro la separación entre la barra de navegación*/
 }
 
 .casillas li a{
+    display: flex;
     text-decoration: none;
     color: rgb(244, 228, 0);
 }
 
-.titulo{
+.casillas li a:hover{  /*Declaro cuando pasa el mouse por encima*/
+    transform: scale(1.3);
+    color: rgb(250, 250, 250);
+}
+
+.titulo1{ /*Declaro el padre de todos los textos*/
     color: antiquewhite;
-    font-size: medium;
-    text-align: center;
+    text-align: center; /*Centro para que no se desborde*/
 }
 
-.titulo2{
-    margin-top: 5%;
+.titulo{ /*Declaro todo el texto del home*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: x-large;
+     color: rgb(255, 255, 255);
 }
 
-.amoramarillo{
+.amoramarillo{  /*DECLARO EL TITULO AMORAMARILLO*/
+    font-size: xx-large;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.diario{ /*Es "Objetos de uso diario"*/
+    margin-bottom: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bienvenidos{ /*Titulo bienvenidos*/
+    margin-top: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.texto{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.bienvenidos{
-    margin-bottom: 4%;
+    margin-top: 5%;
 }
 
 .padre{
     width: 100%;
-    height: 50%;
+    height: 70%;
 }
 
-.foto{
-    border: solid coral;
-    width: 40%;
-    height: 40%;
+.foto{ /*Foto del plato y la taza*/
+    margin-top: 2%;
+    border: 2px solid coral;
+    width: 80%;
+    height: 80%;
 }
 
 footer{
-    margin-bottom: 0px;
-    text-align: center;
-    color: rgb(244, 228, 0);
-    border-top: 2px coral;
+    margin-bottom: 0%;
+    font-size: larger;
+    background-color: rgb(244, 228, 0);
 }
- a:hover{
-    transform: scale(2);
- }
+
+footer .final{
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+}
+
+footer .correo{
+    font-size: 110%;
+    color: black;
+}
+
+
+/*Pagina de contacto*/
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbff0997; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #f4f4f4; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #000000; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #000000; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #000000; 
+    border-color: #fbff00; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: rgb(255, 255, 255); 
+  }
+  
+  
+  span{
+    color: #fcfcfc; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #000000;  
+  }
+  
+  
+  h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #000000;
+  }
+  
+  
+  .h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+
+/*Galeria*/
+.padre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
