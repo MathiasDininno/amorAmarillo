@@ -266,3 +266,91 @@ footer .correo{
     grid-template-columns: 1fr 1fr;
 }
 
+ p{
+  padding: 0 30px;
+ }
+
+ .textogaleria{/*Fotos de galeria*/
+  display: grid;
+  text-decoration: none;/*Sacamos la linea del texto*/
+  color: #fbff00;
+  margin-left: 6%;
+  margin-right: 6%;
+ }
+
+ /*NUEVO NAVBAR*/
+ .navbar{
+  display: flex;
+  flex-direction: row;
+  background-color:  #fbff00;
+ }
+
+ .navbar-toggler{
+  background-color: rgba(255, 255, 255, 0.805);
+ }
+
+ .collapse{
+  margin-left: 30%;
+}
+
+li{
+  text-decoration: none;
+  margin: 4%;
+  background-color: #000000;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ .logo{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 20%;
+ }
+
+ .navbar-toggler{
+  display: flex;
+  text-align: center;
+  width: 10%;
+ }
+
+ @media (min-width: 480px){
+  .logo{
+    width: 15%;
+    max-height: 76px;
+  }
+
+  .navbar-toggler{
+    width: 10%;
+    max-height: 40px;
+  }
+ }
+
+ @media (min-width: 600px){
+  .navbar-toggler{
+    width: 8%;
+  }
+ }
+
+ @media (min-width: 780px){
+  .logo{
+    width: 10%;
+  }
+  .navbar-toggler{
+    width: 6%;
+  }
+ }
+
+
+ @media (min-width: 1000px){
+  li{
+    margin: 8%;
+  }
+  .logo{
+    width: 6%;
+    height: 60px;
+  }
+ }
