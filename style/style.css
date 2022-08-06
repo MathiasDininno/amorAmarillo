@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-width: 102vh;
+    min-width: 107vh;
     min-height: 80vh;
     background-color: rgb(0, 0, 0);
 }
@@ -20,7 +20,7 @@ body{
     background-color: rgb(244, 228, 0);
 }
 
-header .logo{
+header .logo{/* Logo del sitio */
     display: flex;
     float: left; /*Para que se mantenga del lado izquierdo*/
     padding: 1%; /*Paddding para que tengo distacia con los bordes*/
@@ -38,14 +38,14 @@ header .logo{
 }
 
 .social a:hover{ /*Declaro que color y escala quiero para mis redes*/
-    color: rgb(243, 243, 243);
+    color: rgb(255, 255, 255);
     transform: scale(1.3); /*Escala el tamaño de las redes*/
 }
 
 nav{
     display: flex;
     flex-direction: row; /*Dejo en claro que quiero el texto a lo largo*/
-    font-size: 120%; /*Declaro tamaño de letra*/
+    font-size: 110%; /*Declaro tamaño de letra*/
     border-bottom: 2px solid yellow;
     justify-content: space-around; /*Hago que el manu se centre*/
     background-color: rgb(0, 0, 0);
@@ -70,7 +70,7 @@ nav{
 
 .casillas li a:hover{  /*Declaro cuando pasa el mouse por encima*/
     transform: scale(1.3);
-    color: rgb(250, 250, 250);
+    color: rgb(255, 255, 255);
 }
 
 .titulo1{ /*Declaro el padre de todos los textos*/
@@ -102,36 +102,39 @@ nav{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.texto{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5%;
+.texto{/*Texto que esta abajo del bienvenida en el index*/
+    font-family: Arial, Helvetica, sans-serif; /*Tipografia*/
+    margin-top: 4%;/*Margen de separación*/
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .padre{
     width: 100%;
-    height: 70%;
+    height: 90%;
 }
 
 .foto{ /*Foto del plato y la taza*/
     margin-top: 2%;
     border: 2px solid coral;
-    width: 80%;
-    height: 80%;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 54px;
 }
 
 footer{
-    margin-bottom: 0%;
-    font-size: larger;
+    margin-bottom: 0%;/*Para que se quede al fondo del sitio*/
+    font-size: larger; /*Tamaño de la imagen*/
     background-color: rgb(244, 228, 0);
 }
 
-footer .final{
-    font-family: 'Courier New', Courier, monospace;
-    float: left;
+footer .final{/*Es del año que se encuentra en el footer*/
+    font-family: 'Courier New', Courier, monospace;/*Tipografia que se le di al texto*/
+    float: left;/*Para que se mantenga del lado izquierdo del sitio*/
 }
 
-footer .correo{
-    font-size: 110%;
+footer .correo{ /*Es del correo que se encuentra en el footer*/
+    font-size: 110%; /*Tamaño de letra*/
     color: black;
 }
 
@@ -266,91 +269,49 @@ footer .correo{
     grid-template-columns: 1fr 1fr;
 }
 
- p{
-  padding: 0 30px;
- }
-
  .textogaleria{/*Fotos de galeria*/
   display: grid;
   text-decoration: none;/*Sacamos la linea del texto*/
   color: #fbff00;
-  margin-left: 6%;
-  margin-right: 6%;
- }
-
- /*NUEVO NAVBAR*/
- .navbar{
-  display: flex;
-  flex-direction: row;
-  background-color:  #fbff00;
- }
-
- .navbar-toggler{
-  background-color: rgba(255, 255, 255, 0.805);
- }
-
- .collapse{
-  margin-left: 30%;
 }
 
-li{
-  text-decoration: none;
-  margin: 4%;
-  background-color: #000000;
+.fotoga{/*Fotos de galeria*/
+  width: 80%;
+  height: 80%;
 }
 
-a{
-  text-decoration: none;
-  color: white;
+a:focus{/*Se nota cuando apretas ta tecla TAB*/
+  color:#76d95d;
 }
 
- .logo{
-  display: flex;
-  flex-direction: row;
-  width: 20%;
-  height: 20%;
- }
-
- .navbar-toggler{
-  display: flex;
-  text-align: center;
-  width: 10%;
- }
-
- @media (min-width: 480px){
-  .logo{
-    width: 15%;
-    max-height: 76px;
+@media (max-width: 480px) and (min-width: 320px){
+  .plato1{
+    display: none;
   }
 
-  .navbar-toggler{
-    width: 10%;
-    max-height: 40px;
+  .tazapulpo{
+    display: none;
   }
- }
 
- @media (min-width: 600px){
-  .navbar-toggler{
-    width: 8%;
+  footer{
+    margin-top: 147px;
   }
- }
-
- @media (min-width: 780px){
-  .logo{
-    width: 10%;
-  }
-  .navbar-toggler{
-    width: 6%;
-  }
- }
+}
 
 
- @media (min-width: 1000px){
-  li{
-    margin: 8%;
+@media (min-width: 780px){
+  header .logo{
+    width: 95px;
+    height: 95px;
   }
-  .logo{
-    width: 6%;
-    height: 60px;
+
+  .logo:hover{
+    transform: scale(1.1);
   }
- }
+
+  .fotoga{
+    width: 90%;
+    height: 70%;
+    border: 2px solid yellowgreen;
+  }
+}
