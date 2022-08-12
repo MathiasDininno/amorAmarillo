@@ -1,317 +1,284 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-*{
-    padding: 0%;
-    margin: 0%;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-width: 107vh;
-    min-height: 80vh;
-    background-color: rgb(0, 0, 0);
+body {
+  display: flex; /*Declaro que sea flex*/
+  flex-direction: column;
+  text-align: center;
+  min-width: 107vh; /*Un ancho minimo de 107*/
+  min-height: 80vh; /*Declaro un alto min de 80*/
+  background-color: rgb(0, 0, 0); /*Color de fondo*/
 }
 
-.contenedor{ /*Declare la parte superior del sitio*/
-    display: grid;
-    width: 100%;
-    height: 18vh;
-    background-color: rgb(244, 228, 0);
+.contenedor { /*Declare la parte superior del sitio*/
+  display: grid;
+  width: 100%;
+  height: 18vh;
+  background-color: rgb(244, 228, 0);
 }
 
-header .logo{/* Logo del sitio */
-    display: flex;
-    float: left; /*Para que se mantenga del lado izquierdo*/
-    padding: 1%; /*Paddding para que tengo distacia con los bordes*/
-    width: 75px; 
-    height: 75px;
+header .logo { /* Logo del sitio */
+  display: flex;
+  float: left; /*Para que se mantenga del lado izquierdo*/
+  padding: 1%; /*Paddding para que tengo distacia con los bordes*/
+  width: 75px;
+  height: 75px;
 }
 
-.social a{ /*Redes sociales superior*/
-    display: flex;
-    float: right;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 2em;
-    padding: 30px 4%;
+.social a { /*Redes sociales superior*/
+  display: flex;
+  float: right;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  padding: 30px 4%;
 }
 
-.social a:hover{ /*Declaro que color y escala quiero para mis redes*/
-    color: rgb(255, 255, 255);
-    transform: scale(1.3); /*Escala el tamaño de las redes*/
+a:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.3); /*Escala el tamaño de las redes*/
 }
 
-nav{
-    display: flex;
-    flex-direction: row; /*Dejo en claro que quiero el texto a lo largo*/
-    font-size: 110%; /*Declaro tamaño de letra*/
-    border-bottom: 2px solid yellow;
-    justify-content: space-around; /*Hago que el manu se centre*/
-    background-color: rgb(0, 0, 0);
+nav {
+  display: flex;
+  flex-direction: row; /*Dejo en claro que quiero el texto a lo largo*/
+  font-size: 100%; /*Declaro tamaño de letra*/
+  border-bottom: 2px solid rgb(244, 228, 0);
+  justify-content: space-around; /*Hago que el manu se centre*/
+  background-color: rgb(0, 0, 0);
 }
 
-.casillas{ 
-    display: flex;
-    flex-direction: row;
-    padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
+.casillas {
+  display: flex;
+  flex-direction: row;
+  padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
+}
+.casillas li {
+  display: flex;
+  padding: 0 20px; /*Declaro la separación entre la barra de navegación*/
+}
+.casillas a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(244, 228, 0);
+}
+.casillas :hover {
+  transform: scale(1.3);
+  color: rgb(255, 255, 255);
 }
 
-.casillas li{
-    display: flex;
-    padding: 0 20px;/*Declaro la separación entre la barra de navegación*/
+.titulo1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+}
+.titulo1 .amoramarillo {
+  font-size: xx-large;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f6e2e2;
+}
+.titulo1 .diario {
+  margin-bottom: 2%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f6e2e2;
+}
+.titulo1 .bienvenidos {
+  margin-top: 4%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f6e2e2;
+}
+.titulo1 .texto {
+  font-family: Arial, Helvetica, sans-serif; /*Tipografia*/
+  margin-top: 4%; /*Margen de separación*/
+  margin-left: 4%;
+  margin-right: 4%;
+  color: #f6e2e2;
 }
 
-.casillas li a{
-    display: flex;
-    text-decoration: none;
-    color: rgb(244, 228, 0);
+.padre {
+  width: 100%;
+  height: 90%;
 }
 
-.casillas li a:hover{  /*Declaro cuando pasa el mouse por encima*/
-    transform: scale(1.3);
-    color: rgb(255, 255, 255);
+.foto {
+  margin-top: 2%;
+  border: 2px solid coral;
+  width: 40%;
+  height: 40%;
+  margin-bottom: 54px;
 }
 
-.titulo1{ /*Declaro el padre de todos los textos*/
-    color: antiquewhite;
-    text-align: center; /*Centro para que no se desborde*/
+footer {
+  margin-bottom: 0%; /*Para que se quede al fondo del sitio*/
+  font-size: larger; /*Tamaño de la imagen*/
+  background-color: rgb(244, 228, 0);
 }
-
-.titulo{ /*Declaro todo el texto del home*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
-     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-size: x-large;
-     color: rgb(255, 255, 255);
+footer .final {
+  font-family: "Courier New", Courier, monospace; /*Tipografia que se le di al texto*/
+  float: left; /*Para que se mantenga del lado izquierdo del sitio*/
 }
-
-.amoramarillo{  /*DECLARO EL TITULO AMORAMARILLO*/
-    font-size: xx-large;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+footer .correo {
+  font-size: 110%; /*Tamaño de letra*/
+  color: black;
 }
-
-.diario{ /*Es "Objetos de uso diario"*/
-    margin-bottom: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.bienvenidos{ /*Titulo bienvenidos*/
-    margin-top: 4%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.texto{/*Texto que esta abajo del bienvenida en el index*/
-    font-family: Arial, Helvetica, sans-serif; /*Tipografia*/
-    margin-top: 4%;/*Margen de separación*/
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.padre{
-    width: 100%;
-    height: 90%;
-}
-
-.foto{ /*Foto del plato y la taza*/
-    margin-top: 2%;
-    border: 2px solid coral;
-    width: 40%;
-    height: 40%;
-    margin-bottom: 54px;
-}
-
-footer{
-    margin-bottom: 0%;/*Para que se quede al fondo del sitio*/
-    font-size: larger; /*Tamaño de la imagen*/
-    background-color: rgb(244, 228, 0);
-}
-
-footer .final{/*Es del año que se encuentra en el footer*/
-    font-family: 'Courier New', Courier, monospace;/*Tipografia que se le di al texto*/
-    float: left;/*Para que se mantenga del lado izquierdo del sitio*/
-}
-
-footer .correo{ /*Es del correo que se encuentra en el footer*/
-    font-size: 110%; /*Tamaño de letra*/
-    color: black;
-}
-
 
 /*Pagina de contacto*/
-
-.contact_form{  
-    width: 460px; 
-    height: auto;
-    margin: 80px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fbff0997; 
-    padding-left: 30px; 
-  }
-  
-  
-  input{
-    background-color: #f4f4f4; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #000000; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #000000; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  
-  button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #000000; 
-    border-color: #fbff00; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-  
-  button p{
-    color: rgb(255, 255, 255); 
-  }
-  
-  
-  span{
-    color: #fcfcfc; 
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #000000;  
-  }
-  
-  
-  h1{
-    font-size: 39px;  
-    text-align: letf; 
-    padding-bottom: 20px; 
-    color: #000000;
-  }
-  
-  
-  .h3{
-    font-size: 16px; 
-    padding-bottom: 30px;
-    color: #0e0e0e;   
-  }
-  
-  
-  p{
-    font-size: 14px; 
-    color: #0e0e0e; 
-  }
-  
-  
-  ::-webkit-input-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-
-/*Galeria*/
-.padre{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(251, 255, 9, 0.5921568627);
+  padding-left: 30px;
 }
 
- .textogaleria{/*Fotos de galeria*/
+input {
+  background-color: #f4f4f4;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #000000;
+  border-color: #fbff00;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: rgb(255, 255, 255);
+}
+
+span {
+  color: #fcfcfc;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #000000;
+}
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+.h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+/*Galeria*/
+.padre {
   display: grid;
-  text-decoration: none;/*Sacamos la linea del texto*/
+  grid-template-columns: 1fr 1fr;
+}
+
+.textogaleria { /*Fotos de galeria*/
+  display: grid;
+  text-decoration: none; /*Sacamos la linea del texto*/
   color: #fbff00;
 }
 
-.fotoga{/*Fotos de galeria*/
+.fotoga { /*Fotos de galeria*/
   width: 80%;
   height: 80%;
 }
 
-a:focus{/*Se nota cuando apretas ta tecla TAB*/
-  color:#76d95d;
+a:focus { /*Se nota cuando apretas ta tecla TAB*/
+  color: #76d95d;
 }
 
-@media (max-width: 480px) and (min-width: 320px){
-  .plato1{
+@media (max-width: 480px) and (min-width: 320px) {
+  .plato1 {
     display: none;
   }
-
-  .tazapulpo{
+  .tazapulpo {
     display: none;
   }
-
-  footer{
+  footer {
     margin-top: 147px;
   }
 }
-
-
-@media (min-width: 780px){
-  header .logo{
+@media (min-width: 780px) {
+  header .logo {
     width: 95px;
     height: 95px;
   }
-
-  .logo:hover{
+  .logo:hover {
     transform: scale(1.1);
   }
-
-  .fotoga{
+  .fotoga {
     width: 90%;
     height: 70%;
     border: 2px solid yellowgreen;
   }
-}
+}/*# sourceMappingURL=style.css.map */

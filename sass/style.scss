@@ -1,0 +1,163 @@
+$colorbg: rgb(244, 228, 0);
+$colorby:  rgb(0, 0, 0);
+$colortex: #f6e2e2;
+
+@import "fuentes";
+@import "principal";
+
+
+
+/*Pagina de contacto*/
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(251, 255, 9, 0.5921568627);
+  padding-left: 30px;
+}
+
+input {
+  background-color: #f4f4f4;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #000000;
+  border-color: #fbff00;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: rgb(255, 255, 255);
+}
+
+span {
+  color: #fcfcfc;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #000000;
+}
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+.h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+/*Galeria*/
+.padre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.textogaleria { /*Fotos de galeria*/
+  display: grid;
+  text-decoration: none; /*Sacamos la linea del texto*/
+  color: #fbff00;
+}
+
+.fotoga { /*Fotos de galeria*/
+  width: 80%;
+  height: 80%;
+}
+
+a:focus { /*Se nota cuando apretas ta tecla TAB*/
+  color: #76d95d;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .plato1 {
+    display: none;
+  }
+  .tazapulpo {
+    display: none;
+  }
+  footer {
+    margin-top: 147px;
+  }
+}
+@media (min-width: 780px) {
+  header .logo {
+    width: 95px;
+    height: 95px;
+  }
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  .fotoga {
+    width: 90%;
+    height: 70%;
+    border: 2px solid yellowgreen;
+  }
+}

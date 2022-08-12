@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+* {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  body {
+    display: flex; /*Declaro que sea flex*/
+    flex-direction: column;
+    text-align: center;
+    min-width: 107vh; /*Un ancho minimo de 107*/
+    min-height: 80vh; /*Declaro un alto min de 80*/
+    background-color: $colorby; /*Color de fondo*/
+  }
+  
+
+
+  .contenedor { /*Declare la parte superior del sitio*/
+    display: grid;
+    width: 100%;
+    height: 18vh;
+    background-color: $colorbg;
+  }
+
+
+  
+  header .logo{ /* Logo del sitio */
+    display: flex;
+    float: left; /*Para que se mantenga del lado izquierdo*/
+    padding: 1%; /*Paddding para que tengo distacia con los bordes*/
+    width: 75px;
+    height: 75px;
+    }
+
+    .social a{/*Redes sociales superior*/
+        display: flex;
+        float: right;
+        text-decoration: none;
+        color: $colorby;
+        font-size: 2em;
+        padding: 30px 4%;
+    }
+    a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.3); /*Escala el tamaño de las redes*/
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row; /*Dejo en claro que quiero el texto a lo largo*/
+        font-size: 100%; /*Declaro tamaño de letra*/
+        border-bottom: 2px solid $colorbg;
+        justify-content: space-around; /*Hago que el manu se centre*/
+        background-color: $colorby;
+      } 
