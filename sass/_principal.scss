@@ -76,7 +76,7 @@
 footer{
     margin-bottom: 0%; /*Para que se quede al fondo del sitio*/
     font-size: larger; /*Tamaño de la imagen*/
-    background-color: rgb(244, 228, 0);
+    background-color: $colorbg;
 
     .final{
         font-family: "Courier New", Courier, monospace; /*Tipografia que se le di al texto*/

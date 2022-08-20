@@ -130,37 +130,36 @@ footer .correo {
 
 /*Pagina de contacto*/
 .contact_form {
-  width: 460px;
+  width: 60%;
   height: auto;
-  margin: 80px auto;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: rgba(251, 255, 9, 0.5921568627);
-  padding-left: 30px;
+  margin: 4% auto;
+  border-radius: 4%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: rgb(244, 228, 0);
 }
 
 input {
-  background-color: #f4f4f4;
-  width: 408px;
-  height: 40px;
+  background-color: #f6e2e2;
+  width: 78%;
+  height: 30px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: #000000;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  border-color: rgb(0, 0, 0);
+  margin-top: 2%;
+  padding-left: 2%;
+  margin-bottom: 2%;
 }
 
 textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
+  background-color: #f6e2e2;
+  width: 80%;
+  height: 100px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: #000000;
+  border-color: rgb(0, 0, 0);
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -173,49 +172,50 @@ label {
 }
 
 button {
-  height: 45px;
+  height: 40%;
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 10%;
   text-transform: uppercase;
-  background-color: #000000;
-  border-color: #fbff00;
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(244, 228, 0);
   border-style: solid;
   border-radius: 10px;
-  width: 420px;
+  width: 42%;
   cursor: pointer;
 }
 
 button p {
-  color: rgb(255, 255, 255);
+  margin-bottom: 1%;
+  color: #f6e2e2;
 }
 
 span {
-  color: #fcfcfc;
+  color: red;
 }
 
 .aviso {
   font-size: 13px;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 h1 {
   font-size: 39px;
   text-align: letf;
   padding-bottom: 20px;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .h3 {
   font-size: 16px;
   padding-bottom: 30px;
-  color: #0e0e0e;
+  color: rgb(0, 0, 0);
 }
 
 p {
   font-size: 14px;
-  color: #0e0e0e;
+  color: rgb(0, 0, 0);
 }
 
 ::-webkit-input-placeholder {
@@ -254,18 +254,26 @@ p {
 }
 
 a:focus { /*Se nota cuando apretas ta tecla TAB*/
-  color: #76d95d;
+  color: #658c5b;
 }
 
-@media (max-width: 480px) and (min-width: 320px) {
-  .plato1 {
-    display: none;
+@media (max-width: 480px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 30%;
   }
-  .tazapulpo {
-    display: none;
+  .padre {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
-  footer {
-    margin-top: 147px;
+  .padre2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .padre3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (min-width: 780px) {
@@ -277,8 +285,31 @@ a:focus { /*Se nota cuando apretas ta tecla TAB*/
     transform: scale(1.1);
   }
   .fotoga {
-    width: 90%;
-    height: 70%;
+    display: grid;
+    width: 70%;
+    height: 80%;
     border: 2px solid yellowgreen;
+  }
+  .galeria {
+    margin-left: 6%;
+  }
+  .padre {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .padre2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .padre3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .textogaleria {
+    font-size: 4%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  button {
+    width: 30%;
   }
 }/*# sourceMappingURL=style.css.map */
