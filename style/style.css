@@ -258,6 +258,13 @@ a:focus { /*Se nota cuando apretas ta tecla TAB*/
 }
 
 @media (max-width: 480px) {
+  .titulo {
+    font-size: 130%;
+  }
+  .foto {
+    width: 70%;
+    height: 70%;
+  }
   .galeria {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
