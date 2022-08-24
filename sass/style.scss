@@ -6,7 +6,6 @@ $colortex: #f6e2e2;
 @import "principal";
 
 
-
 /*Pagina de contacto*/
 .contact_form {
   width: 60%;
@@ -132,16 +131,55 @@ p {
   height: 80%;
 }
 
-a:focus { /*Se nota cuando apretas ta tecla TAB*/
-  color: #658c5b;
+.fotogaf3 {
+  width: 70%;
+  height: 70%;
 }
 
+.galeria{
+  margin-left: 6%;
+}
+
+a:focus { /*Se nota cuando apretas la tecla TAB*/
+  color: #658c5b;
+}
+ /*Historia*/
+ .texthistoria{
+  color: $colortex;
+  margin: 0% 10%;
+  font-size: 130%;
+ }
+ /*Fin de historia*/
+
+ .texthistoria{
+  color: $colortex;
+  margin: 0% 10%;
+  font-size: 150%;
+  margin-top: 10%;
+ }
+
+ .fotohistoria{
+  width: 40%;
+  margin:10% 0%;
+ }
+
 @media (max-width: 480px){
-  .titulo{
+  .tituloin{
     font-size: 130%;
   }
 
   .foto{
+    width: 70%;
+    height: 70%;
+  }
+
+  .fotoga {
+    width: 70%;
+    height: 80%;
+  }
+
+
+  .fotogaf3{
     width: 70%;
     height: 70%;
   }
@@ -166,9 +204,58 @@ a:focus { /*Se nota cuando apretas ta tecla TAB*/
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .texthistoria{
+    color: $colortex;
+    margin: 0% 10%;
+    font-size: 150%;
+    margin-top: 10%;
+   }
+
+   .fotohistoria{
+    width: 60%;
+    margin:10% 0%;
+   }
 }
 
 
+@media (max-width: 780px) and (min-width:480px){
+  .galeria{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 30%;
+  }
+
+  .padre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .padre2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .padre3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fotoga {
+    display: grid;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid yellowgreen;
+  }
+
+  .fotogaf3{
+    width: 80%;
+    height: 90%;
+    display: grid;
+     border: 2px solid yellowgreen;
+  }
+}
 
 
 
@@ -181,15 +268,24 @@ a:focus { /*Se nota cuando apretas ta tecla TAB*/
     transform: scale(1.1);
   }
 
-.fotoga {
+  .fotoga {
     display: grid;
     width: 70%;
     height: 80%;
     border: 2px solid yellowgreen;
   }
 
+  .fotogaf3{
+    width: 70%;
+    height: 70%;
+    display: grid;
+     border: 2px solid yellowgreen;
+  }
+
   .galeria{
-    margin-left: 6%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 30%;
   }
 
   .padre{
@@ -211,6 +307,19 @@ a:focus { /*Se nota cuando apretas ta tecla TAB*/
     font-size: 4%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+  .texthistoria{
+    color: $colortex;
+    margin: 0% 10%;
+    font-size: 150%;
+    margin-top: 10%;
+   }
+
+   .fotohistoria{
+    width: 20%;
+    margin: 5% 0%;
+    border: solid 2px $colorbg;
+   }
 
   button{
     width: 30%;
