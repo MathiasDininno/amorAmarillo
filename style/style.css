@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   text-align: center;
   min-width: 107vh; /*Un ancho minimo de 107*/
-  min-height: 80vh; /*Declaro un alto min de 80*/
+  min-height: 100vh; /*Declaro un alto min de 80*/
   background-color: rgb(0, 0, 0); /*Color de fondo*/
 }
 
@@ -290,10 +290,10 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   .tituloin {
     font-size: 130%;
   }
-  .foto {
+  /*.foto{
     width: 70%;
     height: 70%;
-  }
+  }*/
   .fotoga {
     width: 70%;
     height: 80%;
