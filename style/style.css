@@ -290,10 +290,10 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   .tituloin {
     font-size: 130%;
   }
-  /*.foto{
+  .foto {
     width: 70%;
     height: 70%;
-  }*/
+  }
   .fotoga {
     width: 70%;
     height: 80%;
