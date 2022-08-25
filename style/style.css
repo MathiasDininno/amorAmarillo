@@ -9,7 +9,7 @@ body {
   display: flex; /*Declaro que sea flex*/
   flex-direction: column;
   text-align: center;
-  min-width: 107vh; /*Un ancho minimo de 107*/
+  min-width: 59vh; /*Un ancho minimo de 107*/
   min-height: 100vh; /*Declaro un alto min de 80*/
   background-color: rgb(0, 0, 0); /*Color de fondo*/
 }
@@ -53,8 +53,7 @@ nav {
 }
 
 .casillas {
-  display: flex;
-  flex-direction: row;
+  flex-direction: colum;
   padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
 }
 .casillas li {
