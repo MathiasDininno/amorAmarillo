@@ -164,6 +164,7 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
  }
 
 @media (max-width: 480px){
+  
   .tituloin{
     font-size: 130%;
   }
@@ -222,6 +223,13 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
 
 
 @media (max-width: 780px) and (min-width:480px){
+
+  .casillas {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
+  }
+
   .galeria{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -266,6 +274,13 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     width: 95px;
     height: 95px;
   }
+
+  .casillas {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
+  }
+
   .logo:hover {
     transform: scale(1.1);
   }
