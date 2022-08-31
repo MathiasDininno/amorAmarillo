@@ -102,14 +102,14 @@ nav {
 
 .padre {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .foto {
   margin-top: 2%;
   border: 2px solid coral;
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
   margin-bottom: 54px;
 }
 
@@ -129,7 +129,7 @@ footer .correo {
 
 /*Pagina de contacto*/
 .contact_form {
-  width: 60%;
+  max-width: 84%;
   height: auto;
   margin: 4% auto;
   padding-top: 3%;
@@ -185,7 +185,7 @@ button {
 }
 
 button p {
-  margin-bottom: 1%;
+  margin: 2%;
   color: #f6e2e2;
 }
 
@@ -212,7 +212,8 @@ h1 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 85%;
+  margin: 4% 4%;
   color: rgb(0, 0, 0);
 }
 
@@ -237,6 +238,8 @@ p {
 /*Galeria*/
 .padre {
   display: grid;
+  max-width: 100%;
+  max-height: 100%;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -246,14 +249,14 @@ p {
   color: #fbff00;
 }
 
-.fotoga { /*Fotos de galeria*/
-  width: 80%;
-  height: 80%;
+.div {
+  max-width: 100%;
+  max-height: 73%;
 }
 
-.fotogaf3 {
+.fotoga {
   width: 70%;
-  height: 70%;
+  height: 100%;
 }
 
 a:focus { /*Se nota cuando apretas la tecla TAB*/
@@ -267,11 +270,10 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   font-size: 130%;
 }
 
-/*Fin de historia*/
 .texthistoria {
   color: #f6e2e2;
-  margin: 0% 10%;
-  font-size: 150%;
+  margin: 0% 4%;
+  font-size: 115%;
   margin-top: 10%;
 }
 
@@ -280,21 +282,14 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   margin: 10% 0%;
 }
 
+/*Fin de historia*/
+.consejo {
+  margin: 2% 4%;
+}
+
 @media (max-width: 480px) {
   .tituloin {
-    font-size: 130%;
-  }
-  .foto {
-    width: 70%;
-    height: 70%;
-  }
-  .fotoga {
-    width: 70%;
-    height: 80%;
-  }
-  .fotogaf3 {
-    width: 70%;
-    height: 70%;
+    font-size: 115%;
   }
   .galeria {
     display: grid;
@@ -313,27 +308,34 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .texthistoria {
-    color: #f6e2e2;
-    margin: 0% 10%;
-    font-size: 150%;
-    margin-top: 10%;
+  .contact_form {
+    width: 90%;
   }
   .fotohistoria {
     width: 60%;
     margin: 10% 0%;
   }
+  .maps {
+    max-width: 84%;
+  }
+  .compotera {
+    width: 60%;
+    height: 60%;
+  }
 }
 @media (max-width: 780px) and (min-width: 480px) {
+  .foto {
+    width: 40%;
+    height: 40%;
+  }
+  .compotera {
+    width: 60%;
+    height: 40%;
+  }
   .casillas {
     display: flex;
     flex-direction: row;
     padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
-  }
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    height: 30%;
   }
   .padre {
     display: grid;
@@ -348,17 +350,18 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     grid-template-columns: repeat(2, 1fr);
   }
   .fotoga {
-    display: grid;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-    border: 2px solid yellowgreen;
-  }
-  .fotogaf3 {
-    width: 80%;
+    width: 90%;
     height: 90%;
-    display: grid;
-    border: 2px solid yellowgreen;
+  }
+  .fotohistoria {
+    width: 30%;
+    height: 40%;
+  }
+  .contact_form {
+    width: 60%;
+  }
+  .maps {
+    width: 60%;
   }
 }
 @media (min-width: 780px) {
@@ -378,12 +381,6 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     display: grid;
     width: 70%;
     height: 80%;
-    border: 2px solid yellowgreen;
-  }
-  .fotogaf3 {
-    width: 70%;
-    height: 70%;
-    display: grid;
     border: 2px solid yellowgreen;
   }
   .galeria {
@@ -410,13 +407,23 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   .texthistoria {
     color: #f6e2e2;
     margin: 0% 10%;
-    font-size: 150%;
+    font-size: 115%;
     margin-top: 10%;
   }
   .fotohistoria {
     width: 20%;
     margin: 5% 0%;
     border: solid 2px rgb(244, 228, 0);
+  }
+  .contact_form {
+    width: 50%;
+  }
+  .maps {
+    width: 50%;
+  }
+  .consejo {
+    margin: 0% 4%;
+    font-size: 150%;
   }
   button {
     width: 30%;
