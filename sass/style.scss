@@ -141,6 +141,11 @@ p {
 a:focus { /*Se nota cuando apretas la tecla TAB*/
   color: #658c5b;
 }
+
+a:visited {
+  color: #8e83db; /* verde */
+  }
+
  /*Historia*/
  .texthistoria{
   color: $colortex;
@@ -152,12 +157,12 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   color: $colortex;
   margin: 0% 4%;
   font-size: 115%;
-  margin-top: 10%;
+  margin-top: 4%;
  }
 
  .fotohistoria{
   width: 40%;
-  margin:10% 0%;
+  margin: 5% 0%;
  }
 /*Fin de historia*/
  .consejo{
@@ -208,6 +213,7 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   .compotera{
     width: 60%;
     height: 60%;
+    border: 4px solid $colortex;
   }
 
 }
@@ -215,13 +221,12 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
 
 @media (max-width: 780px) and (min-width:480px){
 
+  a:visited {
+    color: #8e83db; /* verde */
+    }
+
   .foto{
     width: 40%;
-    height: 40%;
-  }
-
-  .compotera{
-    width: 60%;
     height: 40%;
   }
 
@@ -251,11 +256,6 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     height: 90%;
   }
 
-  .fotohistoria{
-    width: 30%;
-    height: 40%;
-  }
-
   .contact_form{
     width: 60%;
   }
@@ -263,6 +263,19 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   .maps{
     width: 60%;
   }
+
+  .compotera{
+    width: 60%;
+    height: 40%;
+    border: 4px solid $colortex;
+  }
+  .compotera:hover {filter: sepia(60%)};
+
+  .fotohistoria{
+    width: 30%;
+    height: 40%;
+  }
+
 }
 
 
@@ -271,6 +284,12 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     width: 95px;
     height: 95px;
   }
+
+  .foto{
+    width: 40%;
+    border: 4px solid $colortex;
+  }
+  .foto:hover {filter: blur(2px)};
 
   .casillas {
     display: flex;
@@ -286,13 +305,13 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     display: grid;
     width: 70%;
     height: 80%;
-    border: 2px solid yellowgreen;
+    border: 2px solid $colortex;
   }
 
   .galeria{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    height: 30%;
+    text-align: -webkit-center;
   }
 
   .padre{
@@ -315,17 +334,23 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+  .compotera{
+    width: 50%;
+    height: 40%;
+    margin-bottom: 2%;
+    border: 2px solid $colortex;
+  }
+  .compotera:hover {filter: sepia(60%)};
+
   .texthistoria{
     color: $colortex;
     margin: 0% 10%;
     font-size: 115%;
-    margin-top: 10%;
+    margin-top: 4%;
    }
 
    .fotohistoria{
     width: 20%;
-    margin: 5% 0%;
-    border: solid 2px $colorbg;
    }
 
    .contact_form{

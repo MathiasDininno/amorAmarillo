@@ -263,6 +263,10 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   color: #658c5b;
 }
 
+a:visited {
+  color: #8e83db; /* verde */
+}
+
 /*Historia*/
 .texthistoria {
   color: #f6e2e2;
@@ -274,12 +278,12 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   color: #f6e2e2;
   margin: 0% 4%;
   font-size: 115%;
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 .fotohistoria {
   width: 40%;
-  margin: 10% 0%;
+  margin: 5% 0%;
 }
 
 /*Fin de historia*/
@@ -321,15 +325,15 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
   .compotera {
     width: 60%;
     height: 60%;
+    border: 4px solid #f6e2e2;
   }
 }
 @media (max-width: 780px) and (min-width: 480px) {
+  a:visited {
+    color: #8e83db; /* verde */
+  }
   .foto {
     width: 40%;
-    height: 40%;
-  }
-  .compotera {
-    width: 60%;
     height: 40%;
   }
   .casillas {
@@ -353,21 +357,36 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     width: 90%;
     height: 90%;
   }
-  .fotohistoria {
-    width: 30%;
-    height: 40%;
-  }
   .contact_form {
     width: 60%;
   }
   .maps {
     width: 60%;
   }
+  .compotera {
+    width: 60%;
+    height: 40%;
+    border: 4px solid #f6e2e2;
+  }
+  .compotera:hover {
+    filter: sepia(60%);
+  }
+  .fotohistoria {
+    width: 30%;
+    height: 40%;
+  }
 }
 @media (min-width: 780px) {
   header .logo {
     width: 95px;
     height: 95px;
+  }
+  .foto {
+    width: 40%;
+    border: 4px solid #f6e2e2;
+  }
+  .foto:hover {
+    filter: blur(2px);
   }
   .casillas {
     display: flex;
@@ -381,12 +400,12 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     display: grid;
     width: 70%;
     height: 80%;
-    border: 2px solid yellowgreen;
+    border: 2px solid #f6e2e2;
   }
   .galeria {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    height: 30%;
+    text-align: -webkit-center;
   }
   .padre {
     display: grid;
@@ -404,16 +423,23 @@ a:focus { /*Se nota cuando apretas la tecla TAB*/
     font-size: 4%;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+  .compotera {
+    width: 50%;
+    height: 40%;
+    margin-bottom: 2%;
+    border: 2px solid #f6e2e2;
+  }
+  .compotera:hover {
+    filter: sepia(60%);
+  }
   .texthistoria {
     color: #f6e2e2;
     margin: 0% 10%;
     font-size: 115%;
-    margin-top: 10%;
+    margin-top: 4%;
   }
   .fotohistoria {
     width: 20%;
-    margin: 5% 0%;
-    border: solid 2px rgb(244, 228, 0);
   }
   .contact_form {
     width: 50%;
