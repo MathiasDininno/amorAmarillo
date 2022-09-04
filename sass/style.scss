@@ -5,14 +5,47 @@ $colortex: #f6e2e2;
 @import "fuentes";
 @import "principal";
 
+/*Carrusel*/
+.carousel-control-next{
+  margin-top: 14%;
+}
+
+.carousel-control-prev{
+  margin-top: 14%;
+}
+/*Fin de carrusel*/
+
+/*Galeria*/
+.padre {/*Abraza todas las img de galeria*/
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.textogaleria { /*Fotos de galeria*/
+  display: grid;
+  text-decoration: none; /*Sacamos la linea del texto*/
+  color: #fbff00; /*Declaro color de texto*/
+}
+
+.div{
+  max-width: 100%;/*Ancho maximo de las cajas*/
+  max-height: 73%;/*Largo maximo de las cajas*/
+}
+
+.fotoga {/*Fotos de galeria*/
+  width: 70%; /*Ancho*/
+  height: 100%;/*Largo*/
+}
+/*Fin de Galeria*
 
 /*Pagina de contacto*/
-.contact_form {
-  max-width: 84%;
+.contact_form { /*Formulario de contacto*/
+  max-width: 84%; /*Ancho maximo*/
   height: auto;
-  margin: 4% auto;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  margin: 4% auto; /*Margen de 4% superior e inferior*/
+  padding: 5% 0%; /*Margen superior e inferior*/
   background-color: $colorbg;
 }
 
@@ -20,13 +53,10 @@ input {
   background-color: $colortex;
   width: 78%;
   height: 30px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $colorby;
-  margin-top: 2%;
+  border-radius: 5px; 
+  border: solid 1px $colorby;
+  margin: 2% 0%;
   padding-left: 2%;
-  margin-bottom: 2%;
 }
 
 textarea {
@@ -34,13 +64,9 @@ textarea {
   width: 80%;
   height: 100px;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $colorby;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  border: solid 1px $colorby;
+  margin: 10px 0px 20px 0px;
+  padding: 15px 0px 0px 10px;
 }
 
 label {
@@ -50,15 +76,13 @@ label {
 
 button {
   height: 40%;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10%;
+  padding: 0px 5px;
+  margin: 10px 0px 20px 0px;
   text-transform: uppercase;
   background-color: $colorby;
-  border-color: $colorbg;
   border-style: solid;
   border-radius: 10px;
+  border: solid $colorbg;
   width: 42%;
   cursor: pointer;
 }
@@ -96,7 +120,7 @@ p {
   color: $colorby;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder {/*Texto de cajas*/
   color: #a8a8a8;
 }
 
@@ -104,50 +128,26 @@ p {
   color: #a8a8a8;
 }
 
-.formulario input:focus {
+.formulario input:focus {/*Color de cajas*/
   outline: 0;
   border: 1px solid #97d848;
 }
 
-.formulario textarea:focus {
+.formulario textarea:focus {/*Color de caja inferior*/
   outline: 0;
   border: 1px solid #97d848;
 }
+/*Fin de Contacto*/
 
-/*Galeria*/
-.padre {
-  display: grid;
-  max-width: 100%;
-  max-height: 100%;
-  grid-template-columns: 1fr 1fr;
-}
 
-.textogaleria { /*Fotos de galeria*/
-  display: grid;
-  text-decoration: none; /*Sacamos la linea del texto*/
-  color: #fbff00;
-}
+/*Consejos*/
+.consejo{
+  margin: 2% 4%;
+ }  
+/*Fin de consejos*/
 
-.div{
-  max-width: 100%;
-  max-height: 73%;
-}
-
-.fotoga {
-  width: 70%;
-  height: 100%;
-}
-
-a:focus { /*Se nota cuando apretas la tecla TAB*/
-  color: #658c5b;
-}
-
-a:visited {
-  color: #8e83db; /* verde */
-  }
-
- /*Historia*/
- .texthistoria{
+/*Historia*/
+.texthistoria{
   color: $colortex;
   margin: 0% 10%;
   font-size: 130%;
@@ -162,17 +162,26 @@ a:visited {
 
  .fotohistoria{
   width: 40%;
-  margin: 5% 0%;
+  margin: 3% 0%;
  }
 /*Fin de historia*/
- .consejo{
-  margin: 2% 4%;
- }
- 
 
-@media (max-width: 480px){
+a:focus { /*Se nota cuando apretas la tecla TAB*/
+  color: #658c5b;
+}
+
+a:visited {/*Para ver que sitios ya visitaste*/
+  color: #8e83db; 
+  }
   
-  .tituloin{
+  
+@media (max-width: 480px){/*Maximo de 480*/
+  
+  .pottery{/*No aparece el titulo*/
+    display: none;
+  }
+
+  .tituloDeInicio{
     font-size: 115%;
   }
 
@@ -201,39 +210,43 @@ a:visited {
     width: 90%;
   }
 
-   .fotohistoria{
-    width: 60%;
-    margin:10% 0%;
-   }
-
-   .maps{
+  .maps{/*Declaro ancho maximo de maps*/
     max-width: 84%;
   }
-  
-  .compotera{
+
+  .fotoConsejo{/*Foto de consejos*/
     width: 60%;
     height: 60%;
     border: 4px solid $colortex;
   }
+
+   .fotohistoria{
+    width: 40%;
+    margin:10% 0%;
+   }
 
 }
 
 
 @media (max-width: 780px) and (min-width:480px){
 
-  a:visited {
-    color: #8e83db; /* verde */
-    }
+  .social{
+    padding: 9% 4%;
+  }
 
-  .foto{
-    width: 40%;
-    height: 40%;
+  .pottery{
+    margin: 5% 24%;
   }
 
   .casillas {
     display: flex;
     flex-direction: row;
     padding: 2.5% 0%; /*Declaro margen superior/inferior con 4%*/
+  }
+
+  .foto{
+    width: 40%;
+    height: 40%;
   }
 
   .padre{
@@ -264,12 +277,12 @@ a:visited {
     width: 60%;
   }
 
-  .compotera{
+  .fotoConsejo{
     width: 60%;
     height: 40%;
     border: 4px solid $colortex;
   }
-  .compotera:hover {filter: sepia(60%)};
+  .fotoConsejo:hover {filter: sepia(60%)};
 
   .fotohistoria{
     width: 30%;
@@ -281,8 +294,18 @@ a:visited {
 
 @media (min-width: 780px) {
   header .logo {
-    width: 95px;
-    height: 95px;
+    margin: 1% 2%;
+    width: 90px;
+    height: 90px;
+  }
+
+  .social a{
+    padding: 3.5% 3%;
+  }
+
+  .pottery{
+    font-size: 230%;
+    margin: 3.5% 24%;
   }
 
   .foto{
@@ -303,8 +326,8 @@ a:visited {
 
   .fotoga {
     display: grid;
-    width: 70%;
-    height: 80%;
+    width: 80%;
+    height: 100%;
     border: 2px solid $colortex;
   }
 
@@ -334,13 +357,13 @@ a:visited {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  .compotera{
+  .fotoConsejo{
     width: 50%;
     height: 40%;
     margin-bottom: 2%;
     border: 2px solid $colortex;
   }
-  .compotera:hover {filter: sepia(60%)};
+  .fotoConsejo:hover {filter: sepia(60%)};
 
   .texthistoria{
     color: $colortex;
