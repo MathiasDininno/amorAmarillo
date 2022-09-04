@@ -309,6 +309,10 @@ a:visited { /*Para ver que sitios ya visitaste*/
 }
 
 @media (max-width: 480px) { /*Maximo de 480*/
+  .header .logo {
+    width: 70px;
+    height: 60px;
+  }
   .pottery { /*No aparece el titulo*/
     display: none;
   }
@@ -349,6 +353,10 @@ a:visited { /*Para ver que sitios ya visitaste*/
   }
 }
 @media (max-width: 780px) and (min-width: 480px) {
+  header .logo {
+    width: 60px;
+    height: 55%;
+  }
   .social {
     padding: 9% 4%;
   }
