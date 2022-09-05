@@ -126,6 +126,7 @@ nav {
 }
 
 footer {
+  padding: 1%;
   margin-bottom: 0%; /*Para que se quede al fondo del sitio*/
   font-size: larger; /*Tamaño de la imagen*/
   background-color: rgb(244, 228, 0);
